@@ -1,4 +1,4 @@
-/*  Copyright (C) 2014-2019 FastoGT. All right reserved.
+/*  Copyright (C) 2014-2020 FastoGT. All right reserved.
 
     This file is part of FastoNoSQL.
 
@@ -54,10 +54,6 @@ bool string_to_lz4(const convert_in_t& data, convert_out_t* out);
 // bzip2
 bool string_from_bzip2(const convert_in_t& value, convert_out_t* out);
 bool string_to_bzip2(const convert_in_t& data, convert_out_t* out);
-
-// msgpack
-bool string_from_msgpack(const convert_in_t& value, convert_out_t* out);
-bool string_to_msgpack(const convert_in_t& data, convert_out_t* out);
 
 // base64
 bool string_from_base64(const convert_in_t& value, convert_out_t* out);

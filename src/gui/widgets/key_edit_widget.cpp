@@ -1,4 +1,4 @@
-/*  Copyright (C) 2014-2019 FastoGT. All right reserved.
+/*  Copyright (C) 2014-2020 FastoGT. All right reserved.
 
     This file is part of FastoNoSQL.
 
@@ -372,8 +372,7 @@ void KeyEditWidget::syncControls(const core::NValue& item) {
     if (item->GetAsHash(&hash)) {
       for (auto it = hash->begin(); it != hash->end(); ++it) {
         auto element = (*it);
-        common::Value* key = element.first;
-        const auto key_str = core::ConvertValue(key, core::NValue::default_delimiter);
+        const auto key_str = element.first;
         if (key_str.empty()) {
           continue;
         }

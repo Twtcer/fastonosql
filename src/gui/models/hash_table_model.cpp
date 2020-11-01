@@ -1,4 +1,4 @@
-/*  Copyright (C) 2014-2019 FastoGT. All right reserved.
+/*  Copyright (C) 2014-2020 FastoGT. All right reserved.
 
     This file is part of FastoNoSQL.
 
@@ -155,7 +155,7 @@ common::HashValue* HashTableModel::hashValue() const {
     KeyValueTableItem* node = static_cast<KeyValueTableItem*>(data_[i]);
     common::Value::string_t key = node->key();
     common::Value::string_t val = node->value();
-    ar->Insert(key, val);
+    ar->Insert(key, common::Value::CreateStringValue(val));
   }
 
   return ar;
